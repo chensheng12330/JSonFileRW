@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "SHMacroDefine.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activity;
 
+- (IBAction)onGoJsonClick:(id)sender;
 
 @end
 

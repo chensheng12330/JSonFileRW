@@ -14,6 +14,9 @@
 		58804DD21A675E1B006A230D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58804DD11A675E1B006A230D /* Images.xcassets */; };
 		58804DD51A675E1B006A230D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58804DD31A675E1B006A230D /* LaunchScreen.xib */; };
 		58804DE11A675E1B006A230D /* JSonFileRWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58804DE01A675E1B006A230D /* JSonFileRWTests.m */; };
+		58804DEE1A675E60006A230D /* YRJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58804DED1A675E60006A230D /* YRJSONAdapter.m */; };
+		58804DF31A6763A2006A230D /* Category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58804DF21A6763A2006A230D /* Category.txt */; };
+		58804DF51A676867006A230D /* Rss.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58804DF41A676867006A230D /* Rss.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		58804DDA1A675E1B006A230D /* JSonFileRWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSonFileRWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58804DDF1A675E1B006A230D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58804DE01A675E1B006A230D /* JSonFileRWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSonFileRWTests.m; sourceTree = "<group>"; };
+		58804DEC1A675E60006A230D /* YRJSONAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRJSONAdapter.h; sourceTree = "<group>"; };
+		58804DED1A675E60006A230D /* YRJSONAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRJSONAdapter.m; sourceTree = "<group>"; };
+		58804DF01A67600C006A230D /* SHMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMacroDefine.h; sourceTree = "<group>"; };
+		58804DF21A6763A2006A230D /* Category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Category.txt; sourceTree = "<group>"; };
+		58804DF41A676867006A230D /* Rss.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rss.txt; sourceTree = "<group>"; };
+		58804DF91A676D22006A230D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		58804DC31A675E1B006A230D /* JSonFileRW */ = {
 			isa = PBXGroup;
 			children = (
+				58804DEA1A675E60006A230D /* EXTLIB */,
 				58804DC81A675E1B006A230D /* AppDelegate.h */,
 				58804DC91A675E1B006A230D /* AppDelegate.m */,
 				58804DCB1A675E1B006A230D /* ViewController.h */,
@@ -96,8 +106,10 @@
 		58804DC41A675E1B006A230D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58804DF11A6763A2006A230D /* File */,
 				58804DC51A675E1B006A230D /* Info.plist */,
 				58804DC61A675E1B006A230D /* main.m */,
+				58804DF91A676D22006A230D /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +129,33 @@
 				58804DDF1A675E1B006A230D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58804DEA1A675E60006A230D /* EXTLIB */ = {
+			isa = PBXGroup;
+			children = (
+				58804DF01A67600C006A230D /* SHMacroDefine.h */,
+				58804DEB1A675E60006A230D /* YRJSONAdapt */,
+			);
+			path = EXTLIB;
+			sourceTree = "<group>";
+		};
+		58804DEB1A675E60006A230D /* YRJSONAdapt */ = {
+			isa = PBXGroup;
+			children = (
+				58804DEC1A675E60006A230D /* YRJSONAdapter.h */,
+				58804DED1A675E60006A230D /* YRJSONAdapter.m */,
+			);
+			path = YRJSONAdapt;
+			sourceTree = "<group>";
+		};
+		58804DF11A6763A2006A230D /* File */ = {
+			isa = PBXGroup;
+			children = (
+				58804DF21A6763A2006A230D /* Category.txt */,
+				58804DF41A676867006A230D /* Rss.txt */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58804DF31A6763A2006A230D /* Category.txt in Resources */,
 				58804DD01A675E1B006A230D /* Main.storyboard in Resources */,
 				58804DD51A675E1B006A230D /* LaunchScreen.xib in Resources */,
 				58804DD21A675E1B006A230D /* Images.xcassets in Resources */,
+				58804DF51A676867006A230D /* Rss.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58804DEE1A675E60006A230D /* YRJSONAdapter.m in Sources */,
 				58804DCD1A675E1B006A230D /* ViewController.m in Sources */,
 				58804DCA1A675E1B006A230D /* AppDelegate.m in Sources */,
 				58804DC71A675E1B006A230D /* main.m in Sources */,
@@ -343,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = JSonFileRW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = JSonFileRW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
